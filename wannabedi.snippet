@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SnippetFile1</Title>
+      <Author>emragins</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>wannabedi</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>_fieldName</ID>
+          <ToolTip>_fieldName</ToolTip>
+          <Default>_fieldName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>ClassName</ID>
+          <ToolTip>ClassName</ToolTip>
+          <Default>ClassName</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private I$ClassName$ $_fieldName$;
+public I$ClassName$ $ClassName$
+{
+    get { return $_fieldName$ ?? ($_fieldName$ = new $ClassName$()); } 
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
